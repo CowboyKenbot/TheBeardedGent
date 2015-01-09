@@ -1,0 +1,84 @@
+.works {
+  overflow: hidden;
+}
+.work-contain {
+  position: relative;
+  width: 25%;
+  padding-bottom: 25%;
+  float: left;
+  height: 0;
+}
+.customink {
+  background: url('../images/works-customink.jpg') no-repeat left top;
+  @include background-cover;
+}
+.airdout {
+  background: url('../images/works-airdout.jpg') no-repeat left top;
+  @include background-cover;
+}
+.mythic {
+  background: url('../images/works-mythic.jpg') no-repeat left top;
+  @include background-cover;
+}
+.broadsword {
+  background: url('../images/works-bsword.jpg') no-repeat left top;
+  @include background-cover;
+}
+.nasuni {
+  background: url('../images/works-nasuni.jpg') no-repeat left top;
+  @include background-cover;
+}
+.dungeonkeeper {
+  background: url('../images/works-dk.jpg') no-repeat left top;
+  @include background-cover;
+}
+.ultimaforever {
+  background: url('../images/works-u4e.jpg') no-repeat left top;
+  @include background-cover;
+}
+.mythic2 {
+  background: url('../images/works-mythic2.jpg') no-repeat left top;
+  @include background-cover;
+}
+.work-hover {
+  opacity: 0;
+  background: url('../images/work-hover.png') center;
+  @include background-cover;
+  @include transition-all;
+  width: 100%;
+  padding-bottom: 100%;
+  float: left;
+  height: 0;
+  color: $white;
+  font-family: "globersemibold_free";
+  text-transform: uppercase;
+  text-align: center;
+    &:hover {
+      opacity: 1;
+      @include transition-all;
+    }
+    h2 {
+      border-bottom: 2px solid $white;
+      font-family: "mohavesemibold";
+    }
+}
+.work-link {
+  display: block;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  text-indent: -99999px;
+}
+
+@media only screen and (max-width: 730px) {
+  .work-contain {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .work-contain {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+}

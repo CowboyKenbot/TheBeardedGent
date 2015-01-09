@@ -1,0 +1,52 @@
+header {
+  height: 705px;
+  background: url('../images/header-marquee.jpg') no-repeat center top;
+  background-attachment: fixed;
+  @include background-cover;
+  text-align: center;
+  padding: 240px 0 0 0;
+  color: $white;
+  font-family: "mohavebold";
+    h1 {
+      font-size: 156px;
+      text-transform: uppercase;
+      line-height: 160px;
+      font-weight: 100;
+      margin: 0 0 50px;
+    }
+}
+.button-marquee {
+  @include border-button-marquee;
+  font-family: "mohavesemibold";
+  padding: 18px 85px;
+  background: url('../images/marquee-icon-works.png') no-repeat 28px -94px;
+    &:hover {
+      background: url('../images/marquee-icon-works.png') $white no-repeat 28px -24px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+  header {
+    height: 570px;
+    padding: 190px 0 0 0;
+      h1 {
+        font-size: 100px;
+        line-height: 100px;
+      }
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  header {
+    height: 545px;
+    padding: 100px 0 0 0;
+  }
+  .button-marquee {
+    padding: 18px 50px;
+    background: transparent;
+      &:hover {
+        background: $white;
+      }
+  }
+}
+

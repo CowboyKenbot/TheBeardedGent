@@ -1,0 +1,113 @@
+.experience {
+  background: url('../images/exp-bg.png');
+  padding: 35px;
+  text-align: center;
+  overflow: hidden;
+    h2 {
+      font-size: 60px;
+      color: $exp-grey;
+      font-family: "mohavebold";
+      font-weight: 100;
+      padding: 0 0 40px 0;
+    }
+}
+.exp-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.exp-box {
+  width: 200px;
+  height: 200px;
+  float: left;
+  color: $white;
+  font-family: "globersemibold_free";
+  font-size: 20px;
+  font-weight: 100;
+  text-align: left;
+  padding: 130px 0 0 12px;
+    h3 {
+      font-size: 24px;
+      font-weight: 300;
+    }
+}
+.exp-beard {
+  background: #5e3215 url('../images/exp-beard.png') 0 -200px;
+   @include transition-all;
+    &:hover {
+      background: #5e3215 url('../images/exp-beard.png') 0 0;
+      @include transition-all;
+    }
+}
+.exp-photoshop {
+  background: #252340 url('../images/exp-ps.png') 0 -200px;
+   @include transition-all;
+    &:hover {
+      background: #252340 url('../images/exp-ps.png') 0 0;
+      @include transition-all;
+    }
+}
+.exp-css {
+  background: #cc6699 url('../images/exp-css.png') 0 -200px;
+   @include transition-all;
+    &:hover {
+      background: #cc6699 url('../images/exp-css.png') 0 0;
+      @include transition-all;
+    }
+}
+.exp-html {
+  background: #e54d26 url('../images/exp-html.png') 0 -200px;
+   @include transition-all;
+    &:hover {
+      background: #e54d26 url('../images/exp-html.png') 0 0;
+      @include transition-all;
+    }
+}
+.exp-js {
+  background: #0769ad url('../images/exp-js.png') 0 -200px;
+   @include transition-all;
+    &:hover {
+      background: #0769ad url('../images/exp-js.png') 0 0;
+      @include transition-all;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+  .exp-container {
+    width: 100%;
+  }
+  .exp-box {
+    width: 275px;
+    height: 275px;
+  }
+  .exp-beard {
+    background: #5e3215;
+      &:hover {
+        background: #5e3215;
+      }
+  }
+  .exp-photoshop {
+    background: #252340;
+      &:hover {
+        background: #252340;
+      }
+  }
+  .exp-css {
+    background: #cc6699;
+      &:hover {
+        background: #cc6699;
+      }
+  }
+  .exp-html {
+    background: #e54d26;
+      &:hover {
+        background: #e54d26;
+      }
+  }
+  .exp-js {
+    background: #0769ad;
+      &:hover {
+        background: #0769ad;
+      }
+  }
+}
+

@@ -1,0 +1,48 @@
+.contact {
+  background: url('../images/contact-bg.jpg') no-repeat center;
+  @include background-cover;
+  height: 380px;
+  text-align: center;
+  padding: 35px;
+  font-family: "globersemibold_free";
+  color: $contact-grey;
+  font-size: 18px;
+    h2 {
+      font-family: "mohavebold";
+      color: $white;
+      font-size: 60px;
+      text-transform: uppercase;
+      font-weight: 100;
+      padding: 0 0 15px 0;
+    }
+    span {
+      line-height: 30px;
+      display: block;
+      margin: 0 0 45px 0;
+    }
+    .button-marquee {
+      @include border-button-marquee;
+      font-family: "mohavesemibold";
+      padding: 8px 70px;
+      background: url('../images/contact-icon.png') no-repeat 17px -55px;
+        &:hover {
+          background: url('../images/contact-icon.png') $white no-repeat 17px -11px;
+        }
+    }
+}
+
+@media only screen and (max-width: 460px) {
+  .contact {
+    height: auto;
+      .button-marquee {
+        padding: 8px 40px;
+        background: transparent;
+          &:hover {
+            background: $white;
+          }
+      }
+  }
+  .button-about {
+    padding: 10px 30px;
+  }
+}

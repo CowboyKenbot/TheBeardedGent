@@ -1,0 +1,38 @@
+.about {
+  background: url('../images/about-bg.jpg') #e8cdb4 no-repeat  bottom right;
+  height: 420px;
+  padding: 30px;
+  background-attachment: fixed;
+  @include background-cover;
+  text-align: center;
+    h2 {
+      font-family: "mohavebold";
+      color: $about-brown;
+      font-size: 60px;
+      text-transform: uppercase;
+      font-weight: 100;
+      padding: 0 0 15px 0;
+    }
+}
+.about-desc {
+  font-size: 18px;
+  width: 70%;
+  margin: 0 auto 50px;
+  color: $about-brown;
+  font-family: "globersemibold_free";
+  line-height: 30px;
+}
+
+.button-about {
+  @include border-button-about;
+  margin: 35px 0 0 0;
+}
+
+@media only screen and (max-width: 1060px) {
+  .about-desc {
+    width: 100% !important;
+  }
+  .about {
+    height: auto;
+  }
+}

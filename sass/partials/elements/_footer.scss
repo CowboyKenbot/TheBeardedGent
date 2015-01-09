@@ -1,0 +1,28 @@
+footer {
+  background: $black;
+  padding: 20px;
+  font-family: "globersemibold_free";
+  min-height: 100px;
+  text-align: center;
+  color: $footer-grey;
+  font-size: 14px;
+    ul {
+      list-style-type: none;
+      display: block;
+      margin: 20px 0 0 0;
+    }
+    li {
+      list-style-type: none;
+      display: inline-block;
+      font-size: 18px;
+      margin: 0 20px;
+    }
+    a {
+      color: $white;
+      @include transition-all;
+        &:hover {
+          color: $footer-grey;
+          @include transition-all;
+        }
+    }
+}
